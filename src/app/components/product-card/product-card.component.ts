@@ -5,11 +5,11 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { SendDataService } from 'src/app/send-data.service';
 import { DataModeler } from 'src/app/send-data.service';
-
+import { HttpClientModule } from '@angular/common/http';
 @Component({
   selector: 'app-product-card',
   standalone: true,
-  imports: [CommonModule, MatButtonModule, MatCardModule],
+  imports: [CommonModule, MatButtonModule, MatCardModule,HttpClientModule],
   templateUrl: './product-card.component.html',
   styleUrls: ['./product-card.component.css']
 })
@@ -21,12 +21,17 @@ export class ProductCardComponent implements OnChanges{
   dataSendedFilter:DataModeler[] = []
   dataSended: DataModeler[] = []
   constructor(private sendDataService: SendDataService) {
-    this.sendDataService.getAllResources()
-      .then((data: DataModeler[]) => {
+    this.sendDataService.pruebaGetAllResoucr()
+      .subscribe((data)=>{
         this.dataSended = data
         this.dataSendedFilter = data
-        console.log(this.dataSended)
       })
+    // this.sendDataService.getAllResources()
+    //   .then((data: DataModeler[]) => {
+    //     this.dataSended = data
+    //     this.dataSendedFilter = data
+    //     console.log(this.dataSended)
+    //   })
   }
 
   filterResult(filter:string){

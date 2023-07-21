@@ -4,7 +4,7 @@ import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar.component';
 import { HomeComponent } from './pages/home/home.component';
-
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -16,7 +16,8 @@ import { HomeComponent } from './pages/home/home.component';
     NavbarComponent,
     RouterModule.forRoot([
       {path:'', component:HomeComponent}
-    ])
+    ]),
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
