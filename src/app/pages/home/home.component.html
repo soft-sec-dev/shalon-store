@@ -4,5 +4,6 @@
       Product List Viewed</p>
     <app-searching-product (changeFilter)="listenSearching($event)"></app-searching-product>
   </div>
-    <app-product-card [currencyFilterPassing]="currencyFilterPassing" ></app-product-card>
+    <app-product-card [currencyFilterPassing]="currencyFilterPassing" (addStorageProduct)="addStorageProduct($event)"></app-product-card>
 </div>
+<app-store-manage></app-store-manage>

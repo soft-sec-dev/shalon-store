@@ -5,14 +5,15 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card'
 import { SearchingProductComponent } from 'src/app/components/searching-product/searching-product.component';
 import { Observable } from 'rxjs';
-import { SendDataService } from 'src/app/send-data.service';
+import { DataModeler, SendDataService } from 'src/app/send-data.service';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { GradosUI } from 'src/app/send-data.service';
+import { StoreManageComponent } from 'src/app/components/store-manage/store-manage.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule, ProductCardComponent, MatButtonModule, MatCardModule, SearchingProductComponent, HttpClientModule],
+  imports: [CommonModule, ProductCardComponent, MatButtonModule, MatCardModule, SearchingProductComponent,StoreManageComponent],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
@@ -27,5 +28,9 @@ export class HomeComponent  {
   listenSearching(filter:string){
     this.currencyFilterPassing = filter
     // console.log(this.currencyFilterPassing)
+  }
+
+  addStorageProduct(data:string){
+    console.log(data)
   }
 }

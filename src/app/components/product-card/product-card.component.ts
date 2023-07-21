@@ -1,4 +1,4 @@
-import { Component, Input, OnChanges,SimpleChanges} from '@angular/core';
+import { Component, Input, OnChanges,SimpleChanges, Output, EventEmitter} from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { MatButtonModule } from '@angular/material/button';
@@ -14,7 +14,7 @@ import { HttpClientModule } from '@angular/common/http';
   styleUrls: ['./product-card.component.css']
 })
 export class ProductCardComponent implements OnChanges{
-
+  @Output() addStorageProduct = new EventEmitter<string>()
   @Input() currencyFilterPassing: string = ''
   changeLog: string[] = [];
 
@@ -33,6 +33,10 @@ export class ProductCardComponent implements OnChanges{
     //     this.dataSendedFilter = data
     //     console.log(this.dataSended)
     //   })
+  }
+
+  activateCarStorage(data:string){
+    this.addStorageProduct.emit(data)
   }
 
   filterResult(filter:string){
