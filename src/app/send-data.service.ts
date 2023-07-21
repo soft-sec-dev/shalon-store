@@ -17,7 +17,7 @@ export interface GradosUI{
 })
 
 export class SendDataService {
-  url:string='https://github.com/soft-sec-dev/shalon-store/blob/main/db.json'
+  url:string='http://localhost:3000/data'
   constructor(private http:HttpClient) { }
 
   async getAllResources(): Promise<DataModeler[]>{
@@ -26,6 +26,6 @@ export class SendDataService {
   }
 
    pruebaGetAllResoucr(){
-    return this.http.get<DataModeler[]>(`./assets/db.json`)
+    return this.http.get<DataModeler[]>(`https://raw.githubusercontent.com/soft-sec-dev/shalon-store/main/db.json`)
   }
 }

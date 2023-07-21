@@ -1,0 +1,162 @@
+[
+  {
+    "id": 1,
+    "precio": 29.99,
+    "prenda": "Camiseta de algodón",
+    "tipo": "polos",
+    "imagen": "URL_IMAGEN_CAMISETA_ALGODON",
+    "descripcion": "Esta camiseta de algodón es cómoda y perfecta para el uso diario. Con un diseño clásico y versátil, es ideal para cualquier ocasión."
+  },
+  {
+    "id": 2,
+    "precio": 49.99,
+    "prenda": "Zapatillas deportivas",
+    "tipo": "zapatillas",
+    "imagen": "URL_IMAGEN_ZAPATILLAS_DEPORTIVAS",
+    "descripcion": "Estas zapatillas deportivas son ideales para el entrenamiento y actividades físicas. Ofrecen comodidad y soporte para tus pies durante cualquier actividad."
+  },
+  {
+    "id": 3,
+    "precio": 19.99,
+    "prenda": "Shorts deportivos",
+    "tipo": "shorts",
+    "imagen": "URL_IMAGEN_SHORTS_DEPORTIVOS",
+    "descripcion": "Estos shorts deportivos son ligeros y transpirables, perfectos para actividades deportivas y al aire libre."
+  },
+  {
+    "id": 4,
+    "precio": 34.99,
+    "prenda": "Polo de manga corta",
+    "tipo": "polos",
+    "imagen": "URL_IMAGEN_POLO_MANGA_CORTA",
+    "descripcion": "Este polo de manga corta ofrece un estilo casual y elegante. Ideal para reuniones informales o eventos sociales."
+  },
+  {
+    "id": 5,
+    "precio": 39.99,
+    "prenda": "Zapatillas casuales",
+    "tipo": "zapatillas",
+    "imagen": "URL_IMAGEN_ZAPATILLAS_CASUALES",
+    "descripcion": "Estas zapatillas casuales son perfectas para uso diario. Su diseño moderno y cómodo las hace ideales para cualquier ocasión."
+  },
+  {
+    "id": 6,
+    "precio": 25.99,
+    "prenda": "Shorts de playa",
+    "tipo": "shorts",
+    "imagen": "URL_IMAGEN_SHORTS_PLAYA",
+    "descripcion": "Estos shorts de playa son ideales para disfrutar del sol y la playa. Son cómodos y rápidos de secar."
+  },
+  {
+    "id": 7,
+    "precio": 54.99,
+    "prenda": "Camiseta estampada",
+    "tipo": "polos",
+    "imagen": "URL_IMAGEN_CAMISETA_ESTAMPADA",
+    "descripcion": "Esta camiseta estampada ofrece un diseño único y llamativo. Perfecta para aquellos que buscan destacar con estilo."
+  },
+  {
+    "id": 8,
+    "precio": 59.99,
+    "prenda": "Zapatillas para correr",
+    "tipo": "zapatillas",
+    "imagen": "URL_IMAGEN_ZAPATILLAS_CORRER",
+    "descripcion": "Estas zapatillas para correr proporcionan soporte y amortiguación para tus carreras. Maximiza tu rendimiento con este calzado deportivo de alta calidad."
+  },
+  {
+    "id": 9,
+    "precio": 21.99,
+    "prenda": "Shorts de gimnasio",
+    "tipo": "shorts",
+    "imagen": "URL_IMAGEN_SHORTS_GIMNASIO",
+    "descripcion": "Estos shorts de gimnasio son ideales para tus sesiones de entrenamiento. Su diseño te permitirá moverte sin restricciones."
+  },
+  {
+    "id": 10,
+    "precio": 44.99,
+    "prenda": "Polo de rayas",
+    "tipo": "polos",
+    "imagen": "URL_IMAGEN_POLO_RAYAS",
+    "descripcion": "Este polo de rayas ofrece un toque de elegancia y estilo. Combina bien con diferentes atuendos para diversas ocasiones."
+  },
+  {
+    "id": 11,
+    "precio": 49.99,
+    "prenda": "Zapatillas de lona",
+    "tipo": "zapatillas",
+    "imagen": "URL_IMAGEN_ZAPATILLAS_LONA",
+    "descripcion": "Estas zapatillas de lona son ligeras y transpirables. Ideales para días de verano y paseos casuales."
+  },
+  {
+    "id": 12,
+    "precio": 17.99,
+    "prenda": "Shorts de yoga",
+    "tipo": "shorts",
+    "imagen": "URL_IMAGEN_SHORTS_YOGA",
+    "descripcion": "Estos shorts de yoga son suaves y elásticos, perfectos para tus sesiones de yoga y actividades relajantes."
+  },
+  {
+    "id": 13,
+    "precio": 39.99,
+    "prenda": "Camiseta con logo",
+    "tipo": "polos",
+    "imagen": "URL_IMAGEN_CAMISETA_LOGO",
+    "descripcion": "Esta camiseta con logo es ideal para mostrar tu apoyo a tu equipo o marca favorita. Combina comodidad y estilo en una prenda."
+  },
+  {
+    "id": 14,
+    "precio": 64.99,
+    "prenda": "Zapatillas de baloncesto",
+    "tipo": "zapatillas",
+    "imagen": "URL_IMAGEN_ZAPATILLAS_BALONCESTO",
+    "descripcion": "Estas zapatillas de baloncesto ofrecen un alto rendimiento y soporte para tus movimientos rápidos en la cancha."
+  },
+  {
+    "id": 15,
+    "precio": 23.99,
+    "prenda": "Shorts de ciclismo",
+    "tipo": "shorts",
+    "imagen": "URL_IMAGEN_SHORTS_CICLISMO",
+    "descripcion": "Estos shorts de ciclismo te ofrecen comodidad y libertad de movimiento durante tus paseos en bicicleta."
+  },
+  {
+    "id": 16,
+    "precio": 29.99,
+    "prenda": "Polo de algodón",
+    "tipo": "polos",
+    "imagen": "URL_IMAGEN_POLO_ALGODON",
+    "descripcion": "Este polo de algodón es una opción clásica y versátil para tu guardarropa. Combina con pantalones o shorts para diferentes ocasiones."
+  },
+  {
+    "id": 17,
+    "precio": 34.99,
+    "prenda": "Zapatillas urbanas",
+    "tipo": "zapatillas",
+    "imagen": "URL_IMAGEN_ZAPATILLAS_URBANAS",
+    "descripcion": "Estas zapatillas urbanas ofrecen un estilo moderno y urbano, perfectas para el uso diario y salir con amigos."
+  },
+  {
+    "id": 18,
+    "precio": 26.99,
+    "prenda": "Shorts de entrenamiento",
+    "tipo": "shorts",
+    "imagen": "URL_IMAGEN_SHORTS_ENTRENAMIENTO",
+    "descripcion": "Estos shorts de entrenamiento son ligeros y duraderos. Perfectos para tu rutina de ejercicios y entrenamiento físico."
+  },
+  {
+    "id": 19,
+    "precio": 19.99,
+    "prenda": "Camiseta básica",
+    "tipo": "polos",
+    "imagen": "URL_IMAGEN_CAMISETA_BASICA",
+    "descripcion": "Esta camiseta básica es una prenda esencial en cualquier guardarropa. Combina comodidad y sencillez en un diseño clásico."
+  },
+  {
+    "id": 20,
+    "precio": 39.99,
+    "prenda": "Zapatillas de moda",
+    "tipo": "zapatillas",
+    "imagen": "URL_IMAGEN_ZAPATILLAS_MODA",
+    "descripcion": "Estas zapatillas de moda son ideales para quienes buscan un toque elegante en su atuendo casual. Combina estilo y comodidad."
+  }
+]

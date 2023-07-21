@@ -16,10 +16,10 @@ import { GradosUI } from 'src/app/send-data.service';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent  {
 
   currencyFilterPassing:string=''
-  data!:Observable<GradosUI[]>
+
 
   constructor(private senDataService:SendDataService){
 
@@ -27,11 +27,5 @@ export class HomeComponent implements OnInit {
   listenSearching(filter:string){
     this.currencyFilterPassing = filter
     // console.log(this.currencyFilterPassing)
-  }
-  ngOnInit(): void {
-    this.senDataService.pruebaGetAllResoucr()
-      .subscribe((data)=>{
-        console.log(data)
-      })
   }
 }
