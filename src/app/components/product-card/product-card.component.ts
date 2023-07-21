@@ -21,17 +21,17 @@ export class ProductCardComponent implements OnChanges{
   dataSendedFilter:DataModeler[] = []
   dataSended: DataModeler[] = []
   constructor(private sendDataService: SendDataService) {
-    this.sendDataService.pruebaGetAllResoucr()
-      .subscribe((data)=>{
-        this.dataSended = data
-        this.dataSendedFilter = data
-      })
-    // this.sendDataService.getAllResources()
-    //   .then((data: DataModeler[]) => {
+    // this.sendDataService.pruebaGetAllResoucr()
+    //   .subscribe((data)=>{
     //     this.dataSended = data
     //     this.dataSendedFilter = data
-    //     console.log(this.dataSended)
     //   })
+    this.sendDataService.getAllResources()
+      .then((data: DataModeler[]) => {
+        this.dataSended = data
+        this.dataSendedFilter = data
+        console.log(this.dataSended)
+      })
   }
 
   filterResult(filter:string){

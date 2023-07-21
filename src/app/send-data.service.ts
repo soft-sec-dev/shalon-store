@@ -17,7 +17,7 @@ export interface GradosUI{
 })
 
 export class SendDataService {
-  url:string='http://localhost:3000/data'
+  url:string='https://github.com/soft-sec-dev/shalon-store/blob/main/db.json'
   constructor(private http:HttpClient) { }
 
   async getAllResources(): Promise<DataModeler[]>{
