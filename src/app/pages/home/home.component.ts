@@ -10,11 +10,12 @@ import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { GradosUI } from 'src/app/send-data.service';
 import { StoreManageComponent } from 'src/app/components/store-manage/store-manage.component';
 import { StoreCarService } from 'src/app/store-car.service';
+import { NavbarComponent } from 'src/app/components/navbar.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule, ProductCardComponent, MatButtonModule, MatCardModule, SearchingProductComponent,StoreManageComponent],
+  imports: [CommonModule, ProductCardComponent, MatButtonModule, MatCardModule, SearchingProductComponent,StoreManageComponent,NavbarComponent],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
@@ -22,9 +23,15 @@ export class HomeComponent  {
 
   currencyFilterPassing:string=''
   currencyValueStorage:number = 0
+  currencyTitle:string = 'List'
 
   constructor(private senDataService:SendDataService, private storageCarService:StoreCarService){
 
+  }
+
+  listenSearchingNavBar(filter:string){
+    this.currencyTitle = filter
+    this.currencyFilterPassing = filter
   }
   listenSearching(filter:string){
     this.currencyFilterPassing = filter

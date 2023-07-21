@@ -6,10 +6,10 @@
     <p class="text-white text-xl">My App</p>
   </div>
   <div class="flex flex-row gap-3 text-white text-sm">
-    <p>Home</p>
-    <p>Polos update</p>
-    <p>Shorts</p>
-    <p>Zapatilals</p>
-    <p>Administrador</p>
+    <a [routerLink]='["/home"]'  class="flex items-center transition-all ease-in-out delay-150 hover:text-[#e0676f] hover:border-[#0ea5e9] duration-300 hover:cursor-pointer text-[#0ea5e9] border-2 rounded-md border-[#e0676f] p-1" >Home</a>
+    <button class="button-product" (click)="filterResultProducst('polos')">Polos</button>
+    <button class="button-product" (click)="filterResultProducst('shorts')">Shorts</button>
+    <button class="button-product" (click)="filterResultProducst('zapatillas')">Zapatillas</button>
+    <a class="flex items-center transition-all ease-in-out delay-150 hover:text-[#e0676f] hover:border-[#0ea5e9] duration-300 hover:cursor-pointer text-[#0ea5e9] border-2 rounded-md border-[#e0676f] p-1">Administrador</a>
   </div>
 </mat-toolbar>

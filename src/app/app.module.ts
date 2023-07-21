@@ -15,7 +15,8 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserModule,
     NavbarComponent,
     RouterModule.forRoot([
-      {path:'', component:HomeComponent}
+      {path:'home', component:HomeComponent},
+      {path:'', redirectTo:'home', pathMatch:'full'}
     ]),
     HttpClientModule
   ],

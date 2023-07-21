@@ -1,7 +1,8 @@
+<app-navbar (changeFilter)="listenSearchingNavBar($event)"></app-navbar>
 <div class="w-3/4 mr-auto ml-auto p-10 mt-6 shadow-md border rounded-md border-slate-300">
   <div>
     <p class="text-center text-2xl font-semibold underline underline-offset-4 decoration-double decoration-sky-500">
-      Product List Viewed</p>
+      Product <span class="text-sky-500">{{currencyTitle | uppercase}}</span> Viewed</p>
     <app-searching-product (changeFilter)="listenSearching($event)"></app-searching-product>
   </div>
     <app-product-card [currencyFilterPassing]="currencyFilterPassing" (addStorageProduct)="addStorageProduct($event)"></app-product-card>
