@@ -6,4 +6,4 @@
   </div>
     <app-product-card [currencyFilterPassing]="currencyFilterPassing" (addStorageProduct)="addStorageProduct($event)"></app-product-card>
 </div>
-<app-store-manage></app-store-manage>
+<app-store-manage [ventas]="currencyValueStorage"></app-store-manage>

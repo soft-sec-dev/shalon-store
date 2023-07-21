@@ -7,10 +7,20 @@ import { DataModeler } from './send-data.service';
 export class StoreCarService {
 
   store:DataModeler[] = []
+  updateValueStorage:number =0
 
   constructor() { }
 
   updateSrote(data:DataModeler){
     this.store = [...this.store, data]
+  }
+
+  getAllStorageProduct():DataModeler[]{
+    return this.store
+  }
+
+  updateValue():number{
+    this.updateValueStorage = this.updateValueStorage + 1
+    return this.updateValueStorage
   }
 }

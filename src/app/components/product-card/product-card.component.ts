@@ -14,7 +14,7 @@ import { HttpClientModule } from '@angular/common/http';
   styleUrls: ['./product-card.component.css']
 })
 export class ProductCardComponent implements OnChanges{
-  @Output() addStorageProduct = new EventEmitter<string>()
+  @Output() addStorageProduct = new EventEmitter<DataModeler>()
   @Input() currencyFilterPassing: string = ''
   changeLog: string[] = [];
 
@@ -35,7 +35,7 @@ export class ProductCardComponent implements OnChanges{
     //   })
   }
 
-  activateCarStorage(data:string){
+  activateCarStorage(data:DataModeler){
     this.addStorageProduct.emit(data)
   }
 

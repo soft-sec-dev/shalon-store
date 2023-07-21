@@ -9,6 +9,7 @@ import { DataModeler, SendDataService } from 'src/app/send-data.service';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { GradosUI } from 'src/app/send-data.service';
 import { StoreManageComponent } from 'src/app/components/store-manage/store-manage.component';
+import { StoreCarService } from 'src/app/store-car.service';
 
 @Component({
   selector: 'app-home',
@@ -20,9 +21,9 @@ import { StoreManageComponent } from 'src/app/components/store-manage/store-mana
 export class HomeComponent  {
 
   currencyFilterPassing:string=''
+  currencyValueStorage:number = 0
 
-
-  constructor(private senDataService:SendDataService){
+  constructor(private senDataService:SendDataService, private storageCarService:StoreCarService){
 
   }
   listenSearching(filter:string){
@@ -30,7 +31,10 @@ export class HomeComponent  {
     // console.log(this.currencyFilterPassing)
   }
 
-  addStorageProduct(data:string){
-    console.log(data)
+  addStorageProduct(data:DataModeler){
+    this.currencyValueStorage= this.storageCarService.updateValue()
+    this.storageCarService.updateSrote(data)
+    // const allStorage = this.storageCarService.getAllStorageProduct()
+    // console.log(allStorage)
   }
 }
