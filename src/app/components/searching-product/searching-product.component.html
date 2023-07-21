@@ -1,0 +1,4 @@
+<form class="mt-5 mb-5 w-3/4 flex mr-auto ml-auto border-2 rounded-md">
+  <input class="w-3/4 p-3 shadow-md custom-input" type="text" placeholder="Filter resoult" #filter (input)="filterResults(filter.value)">
+  <button class="text-white w-1/4 font-semibold bg-slate-400 rounded-md p-3 shadow-md" type="button" (click)="filterResults(filter.value)">Search</button>
+</form>
