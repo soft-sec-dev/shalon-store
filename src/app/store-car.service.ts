@@ -11,6 +11,24 @@ export class StoreCarService {
 
   constructor() { }
 
+  addProduct(product: DataModeler){
+    console.log('Guardando un dato')
+    this.store = [...this.store, product]
+    console.log(this.store)
+  }
+  deleteProduct(productId:number){
+    const data = this.store.filter((product)=>product.id !== productId)
+    this.store = [...data]
+  }
+
+  getAllStorageProducts():DataModeler[]{
+    return this.store
+  }
+
+  getQuantityProduct():number{
+    return this.store.length
+  }
+
   updateSrote(data:DataModeler){
     this.store = [...this.store, data]
   }
@@ -20,7 +38,14 @@ export class StoreCarService {
   }
 
   updateValue():number{
-    this.updateValueStorage = this.updateValueStorage + 1
-    return this.updateValueStorage
+    return this.store.length +1
   }
+
+  deleteProductByName(idNumber:number){
+    const data = this.store.filter((product)=>product.id !== idNumber)
+    this.store = [...data]
+  }
+
+
+
 }

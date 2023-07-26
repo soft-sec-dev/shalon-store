@@ -16,12 +16,6 @@ export class SearchingProductComponent {
   @Output() changeFilter = new EventEmitter<string>()
   filterBy: string = ''
 
-  applyForm = new FormGroup({
-    firstName: new FormControl(''),
-    lastName: new FormControl(''),
-    email: new FormControl('')
-  });
-
   filterResults(filterBy:string){
     this.filterBy = filterBy
     this.changeFilter.emit(this.filterBy)

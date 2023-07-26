@@ -1,5 +1,17 @@
-<div class="p-4">
-  <div *ngFor="let product of currencyStorageProducs" >
-    <p>{{product.prenda}}</p>
+<mat-dialog-content class="">
+  <p class="text-center text-sky-500 underline underline-offset-4 decoration-red-500 decoration-double text-2xl font-semibold">Card Fis - Product Choosen to Buy</p>
+  <div class="p-4">
+    <div *ngFor="let product of currencyStorageProducs" class="border-y-2 border-sky-300 p-2 grid grid-cols-2 gap-2">
+      <div>
+        <p class="font-semibold">Name: <span class="font-normal text-sm">{{product.prenda}}</span></p>
+        <p class="font-semibold">Tipo: <span class="font-normal text-sm">{{product.tipo}}</span></p>
+        <p class="font-semibold">Precio: <span class="font-normal text-sm">{{product.precio | currency}}</span></p>
+      </div>
+      <div class="flex flex-row gap-2 items-center">
+        <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu" width="150px" class="max-w-min">
+        <button class="rounded-md bg-red-500 p-2 text-white transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 hover:font-semibold hover:bg-red-600" (click)="deleteProduct(product.id)" (click)="getAllProductFromService()">Delete</button>
+      </div>
+    </div>
   </div>
-</div>
+
+</mat-dialog-content>

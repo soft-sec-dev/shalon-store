@@ -14,13 +14,13 @@ import { StorageContentComponent } from '../storage-content/storage-content.comp
 })
 export class StoreManageComponent {
 
-  @Input() ventas: number = 1
+  @Input() ventas: number = 0
 
   constructor(public dialog: MatDialog) { }
 
   openDialog(enterAnimationDuration: string, exitAnimationDuration: string): void {
     this.dialog.open(StorageContentComponent, {
-      width: '250px',
+      width: '600px',
       enterAnimationDuration,
       exitAnimationDuration,
     });
